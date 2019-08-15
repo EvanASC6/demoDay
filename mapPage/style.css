@@ -1,0 +1,28 @@
+body {
+    background-color: #f1c33a;
+    margin:0;
+    padding:0;
+    }
+    iframe{
+       margin-top: 100px;
+       width: 100%;
+       height: 657px;
+    }
+    #map {
+    position:absolute;
+    top:0;
+    bottom:0;
+    width:100%;
+    }
+    .marker {
+        background-image: url("pin.png");
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        }
+         
+        .mapboxgl-popup {
+        max-width: 200px;
+        }
+        

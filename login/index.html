@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <link rel="stylesheet" href="../homePage/style.css">
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.8/src/leaflet-search.css">
+            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+            integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+            crossorigin=""/>
+            <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+            integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+            crossorigin=""></script>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+            <link rel="shortcut icon" href = "../homePage/newLogo-3.png" type = "image/x-icon">
+            <script src="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.8/dist/leaflet-search.src.min.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-auth.js"></script>
+            <script src = "main.js" defer></script>      
+    </head>
+    <body id = mapBody>
+        <div class = "fixed-top login">
+            
+                        <div class="w3-sidebar w3-bar-block w3-black w3-animate-left" style="display:none" id="mySidebar">
+                            <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Hide &times;</button>
+                            <a href="../homePage/index.html" class="w3-bar-item w3-button">Home</a>
+                            <a href="../mapPage/index.html" class="w3-bar-item w3-button">Explore</a>
+                            <a href="../post/index.html" class="w3-bar-item w3-button">Posts</a>
+                        </div>
+                        <div>
+                            <button class="w3-button w3-#f1c33a w3-xxlarge" onclick="w3_open()">&#9776;</button>
+                        </div>
+                        <script>
+                            function w3_open() {
+                                document.getElementById("mySidebar").style.display = "block";
+                            }
+                            function w3_close() {
+                                document.getElementById("mySidebar").style.display = "none";
+                            }
+                        </script>
+                    <p id = "logo"><strong>Cargo</strong></p> 
+                    <nav class="navbar navbar-light" >
+
+                          </nav>
+            </div>
+        <div><br><br><br><br><br></div>
+    <!-- <div class = "topLog">
+        <h1 id = "logTop">Please Login</h1>
+    </div> -->
+
+    <div class = "login-box">
+        <h1>Login</h1>
+        <div class="textbox">
+            <i class="fas fa-user" aria-hidden="true"></i>
+            <input type="text" placeholder="Username" name="" value="">
+        </div>
+        <div class="textbox">
+            <i class="fas fa-lock" aria-hidden="true"></i>
+            <input type="password" placeholder="Password" name="" value="">
+        </div>
+        <input class="btn" type="button" name="" value="Sign in">
+    </div>
+</body>
+</html>

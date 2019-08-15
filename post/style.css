@@ -1,0 +1,20 @@
+#Post{
+    height:500px ;
+    margin-top: 10px;
+}
+#postJumbo{
+    display: flex;
+    flex-direction: column;
+}
+.textbox{
+    background-color: whitesmoke;
+}
+#postBox{
+    height: 400px;
+}
+#postTitle{
+    color:white;
+}
+.login-box{
+    margin-top: 50px
+}

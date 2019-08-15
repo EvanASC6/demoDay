@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+   <html>
+       <head>
+           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+           <link rel="stylesheet" href="../homePage/style.css">
+           <meta name="viewport" content="width=device-width, initial-scale=1">
+           <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+           <link rel="shortcut icon" href = "../homePage/newLogo-3.png" type = "image/x-icon">
+           <meta charset="utf-8" />
+           <title>Add a geocoder</title>
+           <link rel="stylesheet" href="style.css">
+           <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+
+       </head>
+       <body>
+               <div class = "fixed-top login">
+                       <div class="w3-sidebar w3-bar-block w3-black w3-animate-left" style="display:none" id="mySidebar">
+                           <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Hide &times;</button>
+                           <a href="../homePage/index.html" class="w3-bar-item w3-button">Home</a>
+                           <a href="../mapPage/index.html" class="w3-bar-item w3-button">Explore</a>
+                           <a href="../post/index.html" class="w3-bar-item w3-button">Posts</a>
+                       </div>
+                       <div>
+                           <button class="w3-button w3-#f1c33a w3-xxlarge" onclick="w3_open()">&#9776;</button>
+                       </div>
+                       <script>
+                           function w3_open() {
+                               document.getElementById("mySidebar").style.display = "block";
+                           }
+                           function w3_close() {
+                               document.getElementById("mySidebar").style.display = "none";
+                           }
+                       </script>
+                   <p id = "logo"><strong>Cargo</strong></p>
+                   <nav class="navbar navbar-light" >
+                           <form class="form-inline">
+                               <a  href = "../login/index.html"><button class="btn btn-btn-outline-secondary" type="button">Login</button></a>
+                               <a  href = "../signUp/signUp.html"><button class="btn btn-outline-success" type="button" style = "background-color: #f1c33a" id = "Sign">Sign Up</button></a>                           </form>
+                         </nav>
+           </div>
+           <iframe src="map.html" width="200" height="200" frameborder="0"></iframe>
+       </body>
+   </html>

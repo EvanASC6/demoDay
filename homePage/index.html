@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <link rel="stylesheet" href="style.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="shortcut icon" href = "newLogo-3.png" type = "image/x-icon">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">        
+    </head>
+    <body>
+            <div class = "fixed-top login">
+                
+                            <div class="w3-sidebar w3-bar-block w3-black w3-animate-left" style="display:none" id="mySidebar">
+                                <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Hide &times;</button>
+                                <a href="../homePage/index.html" class="w3-bar-item w3-button">Home</a>
+                                <a href="../mapPage/index.html" class="w3-bar-item w3-button">Explore</a>
+                                <a href="../post/index.html" class="w3-bar-item w3-button">Posts</a>
+                            </div>
+                            <div>
+                                <button class="w3-button w3-#f1c33a w3-xxlarge" onclick="w3_open()">&#9776;</button>
+                            </div>
+                            <script>
+                                function w3_open() {
+                                    document.getElementById("mySidebar").style.display = "block";
+                                }
+                                function w3_close() {
+                                    document.getElementById("mySidebar").style.display = "none";
+                                }
+                            </script>
+                        <p id = "logo"><strong>Cargo</strong></p> 
+                        <nav class="navbar navbar-light" >
+                                <form class="form-inline">
+                                    <a  href = "../login/index.html"><button class="btn btn-btn-outline-secondary" type="button">Login</button></a>
+                                    <a  href = "../signUp/signUp.html"><button class="btn btn-outline-success" type="button" style = "background-color: #f1c33a" id = "Sign">Sign Up</button></a>
+                                </form>
+                              </nav>
+                </div>
+        <div class="jumbotron">
+
+            <p id = "jumboWords"><strong>Shop smart with <u>Cargo</u></strong></p>
+
+        </div>
+        <div><br><br><br></div>
+        <div id="rectangle"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6">
+                    Cargo is a New York based business that expands on the idea of discounts. We are the first app that gives users real time discounts in real stores around the city. We find these discounts through our databases, but most importantly through you, the user. The user has the freedom to post any discount they find in any store around the city. We are open to listen to our consumers and are determined to build a community of friendly shoppers.
+                </div>
+        <div><br><br><br></div>
+            </div>
+        </div>
+        <div id="rectangleTwo"></div>
+    <div><br></div>
+ <div id = "mainRect">
+    <div id="rectangleThree"><strong>Community</strong></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-8" id = "secWord">
+               We have high value of our community, and believe that there is no better way to run an app than through our users. We built a friendly community of fellow shoppers that use this map to not just help themselves, but their peers as well.
+            </div>
+    <div><br><br><br></div>
+        </div>
+    </div>
+    <div id="rectangleFour"></div>
+ </div>
+    <div class = "space">
+        <p>space</p>
+    </div>
+    <div id = "secondRect">
+        <div id="rectangleFive"><strong> Access </strong></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-7" id = "thirdWord">
+                    Access Cargo anywhere, anytime using our upcoming mobile app! OUr simple, straight-forward UI will allow newcomers to get used to our app with ease. Cargo mobile app will be launched in App Store and Google Play later this year. 
+                </div>
+                <div class="col-5"></div>
+        <div><br><br><br></div>
+            </div>
+        </div>
+        <div id="rectangleSix"></div>
+    </div>
+        <div class = "space" id = "space2">
+            <p>space</p>
+        </div>
+ <div id = "thirdRect">
+ <div id = "cargo"><strong>Cargo</strong></div>
+ <div class="card" id = "info">
+    <div class="cardTwo" id = "city" ><strong>New York</strong></div>
+    <div class="cardTwo" >150 E 42nd St 32nd Floor,</div>
+    <div class="cardTwo" id = "address" >New York, NY 10017</div>
+    <div class="cardTwo" id = "phone" >(718) 338-4831</div>
+      </div>
+ </div>
+    </body>
+ </html>
