@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Add a geocoder</title>
+        <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+        <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.js"></script>
+        <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.css" rel="stylesheet" />
+        <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-firestore.js"></script>
+        <script>
+                // Your web app's Firebase configuration
+                var firebaseConfig = {
+                  apiKey: "AIzaSyA5CGc3VatiZhziik8pIUYzwwkbCtt8yOA",
+                  authDomain: "cargo-dd4bd.firebaseapp.com",
+                  databaseURL: "https://cargo-dd4bd.firebaseio.com",
+                  projectId: "cargo-dd4bd",
+                  storageBucket: "cargo-dd4bd.appspot.com",
+                  messagingSenderId: "781013156839",
+                  appId: "1:781013156839:web:3dbfd051ff06043a"
+                };
+                // Initialize Firebase
+                firebase.initializeApp(firebaseConfig);
+              </script>
+        <script src = "main.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.1/mapbox-gl-geocoder.min.js"></script>
+        <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.1/mapbox-gl-geocoder.css" type="text/css" />
+        <div id="map"></div>
+    </body>
+</html>
