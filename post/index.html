@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Make a post</title>
+        <title>Make a Post</title>
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
             <link rel="stylesheet" href="../homePage/style.css">
+            <link rel="stylesheet" href="../login/style.css">
             <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.8/src/leaflet-search.css">
+            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+            integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+            crossorigin=""/>
             <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
             integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
             crossorigin=""></script>
@@ -55,29 +60,31 @@
                             }
                         </script>
                     <p id = "logo"><strong>Cargo</strong></p> 
-                    <nav class="navbar navbar-light"></nav>
+                    <nav class="navbar navbar-light" >
+
+                          </nav>
             </div>
         
             <div class = "jumbotron" id = "postJumbo">
                 <div class = "login-box">
-                    <h1>Create a Post</h1>
-                    <div class="textbox" id = "peppaPig">
-                        <i class="fas fa-user" aria-hidden="true"></i>
-                    <div id = "postTitle">
-                        <input id = "title" type="text" placeholder="Title" name="" value="">
+                        <h1>Create a Post</h1>
+                        <div class="textbox" id = "peppaPig">
+                            <i class="fas fa-user" aria-hidden="true"></i>
+                            <div id = "postTitle">
+                                    <input id = "title" type="text" placeholder="Title" name="" value="">
+                                </div>
+                        </div>
+                        <div class="textbox" id = "postBox">
+                            <i class="fas fa-lock" aria-hidden="true"></i>
+                            <div id = "postWords">
+                                <textarea name="Post" id="Post" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <div class="textbox" >
+                                <i class="fas fa-user" aria-hidden="true"></i>
+                                <div id = "postTitle">
+                                        <input id = "address" type="text" placeholder="Address" name="" value="">
+                                    </div>
+                            </div>
+                        <input class="btn" id = "peppaPiggy" type="button" name="" value="Upload">
                     </div>
-                </div>
-                <!-- <div class="textbox" id = "postBox">
-                    <i class="fas fa-lock" aria-hidden="true"></i>
-                    <div id = "postWords">
-                        <textarea name="Post" id="Post" cols="30" rows="10"></textarea>
-                    </div>
-                </div> -->
-                <div class="textbox">
-                    <i class="fas fa-user" aria-hidden="true"></i>
-                    <div id = "postTitle">
-                        <input id = "address" type="text" placeholder="Address" name="" value="">
-                    </div>
-                </div>
-                <input class="btn" id = "peppaPiggy" type="button" name="" value="Upload">
-            </div>
