@@ -9,6 +9,7 @@
 }
 .textbox{
     background-color: whitesmoke;
+    height: 200px;
 }
 #postBox{
     height: 400px;
