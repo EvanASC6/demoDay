@@ -10,7 +10,8 @@
     background-color: whitesmoke;
 }
 #postBox{
-    height: 400px;
+    height: 0px;
+    background-color:#f1c33a;
 }
 #postTitle{
     color:white;
