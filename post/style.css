@@ -5,18 +5,15 @@
 #postJumbo{
     display: flex;
     flex-direction: column;
-    height: 400px;
 }
 .textbox{
     background-color: whitesmoke;
-    height: 200px;
 }
 #postBox{
     height: 400px;
 }
 #postTitle{
     color:white;
-    height: 400px;
 }
 .login-box{
     margin-top: 50px
