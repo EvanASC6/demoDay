@@ -21,7 +21,7 @@ upload.addEventListener('click',function(e){
 
         let post ={
             Title: document.getElementById("title").value,
-            Content: document.getElementById("Post").value,
+            // Content: document.getElementById("Post").value,
             Location: new firebase.firestore.GeoPoint(coordinates.lat, coordinates.lng),
             Address: address.value
         }
