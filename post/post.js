@@ -20,7 +20,7 @@ upload.addEventListener('click',function(e){
         let coordinates = myJson.results[0].geometry.location;
 
         let post ={
-            Title: document.getElementById("title").value,
+            Title: document.getElementById("title").value + ": ",
             // Content: document.getElementById("Post").value,
             Location: new firebase.firestore.GeoPoint(coordinates.lat, coordinates.lng),
             Address: address.value
